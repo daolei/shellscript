@@ -8,7 +8,7 @@ test -d ./java || mkdir -p java
 if arch | grep '64'; then
 wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u65-b17/jdk-8u65-linux-x64.tar.gz -O jdk-1.8.0.tar.gz
 else
-#wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u20-b26/jdk-8u20-linux-i586.tar.gz -O jdk-1.8.0.tar.gz
+wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u20-b26/jdk-8u20-linux-i586.tar.gz -O jdk-1.8.0.tar.gz
 echo 'hehe'
 fi
 tar xzf jdk-1.8.0.tar.gz -C ~/java
